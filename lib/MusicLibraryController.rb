@@ -78,6 +78,7 @@ class MusicLibraryController
 # Split songs by "." and "-"
 
      puts "Playing #{n}"
+     binding.pry
    end
 
   #  def list_songs
