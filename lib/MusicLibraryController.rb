@@ -80,45 +80,14 @@ class MusicLibraryController
 
 
     if (1..songs.length).include?(input)
-      song = Song.all.sort{ |a, b| a.name <=> b.name }[input - 1]
+      song = list_songs[input - 1]
     end
     # binding.pry
 
     puts "Playing #{song.name} by #{song.artist.name}" if song
   end
 
-  #  def list_songs
-   #
-  #  Song.all.sort{ |a, b| a.name <=> b.name }.each.with_index(1) do |s, i|
-  #    puts "#{i}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
-  #    end
-  #  end
-
-  #  expect($stdout).to receive(:puts).with("Playing Larry Csonka by Action Bronson")
-   #
-  #  music_library_controller.play_song
-  #  end
-   #
-  #  it "does not 'puts' anything out if a matching song is not found" do
-  #  allow(music_library_controller).to receive(:gets).and_return("6")
-   #
-  #  expect($stdout).to receive(:puts).with("Which song number would you like to play?")
-  #  expect($stdout).to_not receive(:puts)
-   #
-  #  music_library_controller.play_song
-  #  end
-   #
-  #  it "checks that the user entered a number between 1 and the total number of songs in the library" do
-  #  allow(music_library_controller).to receive(:gets).and_return("0")
-   #
-  #  expect($stdout).to receive(:puts).with("Which song number would you like to play?")
-  #  expect($stdout).to_not receive(:puts)
-   #
-  #  music_library_controller.play_song
-  #  end
-  #  end
-  #  end
-
+  
 
 
 
