@@ -75,7 +75,6 @@ class MusicLibraryController
 
     songs = Song.all
 
-
     if (1..songs.length).include?(user_input)
       song = Song.all.sort{ |a, b| a.name <=> b.name }[user_input - 1]
     end
