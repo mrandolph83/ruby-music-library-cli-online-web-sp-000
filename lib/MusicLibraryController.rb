@@ -73,7 +73,7 @@ class MusicLibraryController
      puts "Which song number would you like to play?"
      song_num = gets.strip
      n = list_songs[song_num.to_i - 1]
-     
+
 
 # Split songs by "." and "-"
 
