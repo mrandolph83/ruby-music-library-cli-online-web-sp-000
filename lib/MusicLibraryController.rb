@@ -77,7 +77,7 @@ class MusicLibraryController
 
 # Split songs by "." and "-"
 
-     puts "Playing #{n.song} by #{n.artist}"
+     puts "Playing #{n}"
    end
 
   #  def list_songs
