@@ -72,8 +72,8 @@ class MusicLibraryController
   def play_song
      puts "Which song number would you like to play?"
      song_num = gets.strip
-     new_song_array = list_songs.split(". ")
-binding.pry
+     new_song_array = list_songs
+# binding.pry
 Split songs by "." and "-"
 
      puts "Playing #{play_song}"
